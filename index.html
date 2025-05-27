@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GPA Calculator</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+      <h1>GPA Calculator</h1>
+
+      <div class="nav-buttons">
+        <button onclick="showSection('sgpa')">SGPA</button>
+        <button onclick="showSection('cgpa')">CGPA</button>
+        <button onclick="showSection('target')">Target CGPA</button>
+        <button onclick="clearAll()">Clear</button>
+      </div>
+
+      <!-- SGPA Section -->
+      <div id="sgpa" class="section" style="display: none;">
+        <h2>SGPA Calculator</h2>
+        <div id="sgpaInputs"></div>
+        <button onclick="addSubject()">Add Subject</button>
+        <button onclick="calculateSGPA()">Calculate SGPA</button>
+        <p id="sgpaResult"></p>
+      </div>
+
+      <!-- CGPA Section -->
+      <div id="cgpa" class="section" style="display: none;">
+        <h2>CGPA Calculator</h2>
+        <label>Semesters Completed: <input type="number" id="semesters" /></label>
+        <button onclick="generateSemInputs()">Add Semesters</button>
+        <div id="cgpaInputs"></div>
+        <button onclick="calculateCGPA()">Calculate CGPA</button>
+        <p id="cgpaResult"></p>
+      </div>
+
+      <!-- Target CGPA Section -->
+      <div id="target" class="section" style="display: none;">
+        <h2>Target CGPA Planner</h2>
+        <label>Current CGPA: <input type="number" step="0.01" id="currentCgpa" /></label>
+        <label>Total Credits Earned: <input type="number" id="currentCredits" /></label>
+        <br>
+        <label>Target CGPA: <input type="number" step="0.01" id="targetCgpa" /></label>
+        <label>Upcoming Credits: <input type="number" id="upcomingCredits" /></label>
+        <br>
+        <button onclick="calculateTargetSGPA()">Calculate Required SGPA</button>
+        <p id="targetResult"></p>
+      </div>
+
+    </div> <!-- end .box -->
+  </div> <!-- end .container -->
+
+  <script src="script.js"></script>
+</body>
+</html>

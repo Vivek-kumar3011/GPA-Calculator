@@ -1,0 +1,84 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f1f4f8;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.box {
+  background-color: #fb9dd2;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 500px;
+}
+
+.box h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #333;
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.nav-buttons button {
+  padding: 10px 20px;
+  background: #2180f6;
+  color: rgb(246, 235, 235);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.nav-buttons button:hover {
+  background: #2563eb;
+}
+
+.section {
+  display: none;
+  background: rgb(222, 193, 193);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-top: 10px;
+}
+
+.section h2 {
+  margin-top: 0;
+}
+
+/* Inputs */
+input[type="number"],
+select {
+  margin: 5px 0;
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  margin: 5px 0;
+}
+
+/* Target CGPA Fix */
+#target label {
+  display: block;
+  margin: 10px 0 5px;
+}
