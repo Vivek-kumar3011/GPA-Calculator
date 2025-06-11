@@ -38,7 +38,7 @@ def calculate_sgpa():
 
     # Mapping of grades to grade points
     grade_to_point = {
-        'EX': 10, 'S': 10, 'A': 9, 'B': 8, 'C': 7, 'D': 6, 'P': 5, 'E': 4,
+        'EX': 10, 'S': 10, 'A+': 10, 'A': 9, 'B': 8, 'C': 7, 'D': 6, 'P': 5, 'E': 4,
         'F': 0, 'FR': 0, 'U': None
     }
 
