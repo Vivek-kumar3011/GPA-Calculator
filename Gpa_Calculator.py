@@ -44,7 +44,7 @@ def calculate_sgpa():
 
     for i in range(1, no_of_subjects + 1):
         print(f"\nSubject {i}:")
-        grade_input = input("  → Enter Grade (EX, S, A, B, C, D, E, P, F, FR, U): ").strip().upper()
+        grade_input = input("  → Enter Grade (EX, S, A+, A, B, C, D, E, P, F, FR, U): ").strip().upper()
         credit_point = get_int_input("  → Enter Credit Points (1 or more): ", min_value=1)
 
         grade_point = grade_to_point.get(grade_input)
