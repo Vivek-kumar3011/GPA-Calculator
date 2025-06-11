@@ -16,7 +16,7 @@ function addSubject() {
   div.innerHTML = `
     Subject ${subjectCount}:
     <select>
-      <option value="10">EX/S</option>
+      <option value="10">EX/S/A+</option>
       <option value="9">A</option>
       <option value="8">B</option>
       <option value="7">C</option>
